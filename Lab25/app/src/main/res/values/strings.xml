@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lab2_5</string>
+    <string name="Thumbnail">
+        <item>Thumbnail 1</item>
+        <item>Thumbnail 2</item>
+        <item>Thumbnail 3</item>
+        <item>Thumbnail 4</item>
+    </string>
+</resources>

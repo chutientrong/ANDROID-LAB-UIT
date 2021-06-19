@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="0.3"
+            android:text="Name:" />
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="0.7"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Bun dau" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:text="Thumbnail" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="0.7"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="0.3"
+            android:text="Promotion" />
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="0.7" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="ADD A NEW DISH" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:id="@+id/list_dish"/>
+    </LinearLayout>
+</LinearLayout>

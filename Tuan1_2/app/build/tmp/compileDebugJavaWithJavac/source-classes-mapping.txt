@@ -1,0 +1,4 @@
+com/example/tuan1_2/MainActivity.java
+ com.example.tuan1_2.MainActivity
+com/example/tuan1_2/BuildConfig.java
+ com.example.tuan1_2.BuildConfig

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="#66000000"
+        android:layout_marginTop="160dp"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="15sp"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+            app:layout_constraintEnd_toEndOf="@+id/imageView1" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:layout_marginLeft="170dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_promotion"/>
+    </FrameLayout>
+
+</FrameLayout>
